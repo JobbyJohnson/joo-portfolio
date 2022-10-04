@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>component-library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Components Library</h1>
@@ -24,32 +25,40 @@
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <div>This is a fluid container which will got to the end of the page</div>
+    <div class="container ">This is a fluid container which will got to the end of the page</div>
 
     <h3>center container</h3>
-    <div>This is a centered container and it will go to the specific width</div>
+    <div class=" container container-center">This is a centered container and it will go to the specific width</div>
 
     <hr>
 
     <h2>@links</h2>
 
-    <a href="#">Primary Link</a>
-    <a href="#">Secondary Link</a>
+    <a class="link link-primary" href="#">Primary Link</a>
+    <a class="link link-secondary" href="#">Secondary Link</a>
 
     <hr>
 
     <h2>@lists</h2>
 
     <h3>unordered list</h3>
-    <ul>
-        <li>iline item one</li>
-        <li>iline item two</li>
-        <li>iline item three</li>
+    <ul class="list-non-bullet">
+        <li>inline item one</li>
+        <li>inline item two</li>
+        <li>inline item three</li>
     </ul>
+
+    <h3>unordered inline list</h3>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">inline item one</li>
+        <li class="list-item-inline">inline item two</li>
+        <li class="list-item-inline">inline item three</li>
+    </ul>
+
 
     <h3>reverse ordered list</h3>
 
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>eggs</li>
         <li>bread</li>
@@ -60,45 +69,50 @@
 
     <h2>@nav</h2>
 
-    <nav>
-        <div>iAmBrand</div>
-        <ul>
-            <li><a href="">home</a></li>
-            <li><a href="">products</a></li>
-            <li><a href="">projects</a></li>
+    <nav class="navigation container">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a href="" class="link link-active">home</a></li>
+            <li class="list-item-inline"><a href="" class="link">products</a></li>
+            <li class="list-item-inline"><a href="" class="link">projects</a></li>
 
         </ul>
     </nav>
 
     <hr>
     <h2>@header</h2>
-    <header>
-        <img src="images\hero.svg" alt="">
-        <h1>Heading section</h1>
+    <header class="hero">
+        <img class="hero-image" src="images\hero.svg" alt="">
+        <h1 class="hero-heading">hero title will come here</h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
-    <section>
-        <h3>White section</h3>
-        <p>THis will have white bg</p>
+    <section >
+        <div class="container container-center">
+            <h3>White section</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
     </section>
 
-    <section>
+    <section class="ow">
+        <div class="container container-center">
         <h3>gray section</h3>
-        <p>This will have white bg</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
     </section>
 
     <hr>
     <h2>@footer</h2>
 
-    <footer style="height: 30vh;">
-        <div>
-            <ul>
-                <li>social one</li>
-                <li>social two</li>
-                <li>social three</li>
+    <footer>
+        <div class="footer-header">
+            <ul class="list-non-bullet">
+                <li class="list-item-inline"><a href="" class="link">social one</a></li>
+                <li class="list-item-inline"><a href="" class="link">social two</a></li>
+                <li class="list-item-inline"><a href="" class="link">social three</a></li>
+    
             </ul>
         </div>
     </footer>  
