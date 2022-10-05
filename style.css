@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    margin: 0px;
 }
 
 hr{
@@ -28,6 +29,7 @@ hr{
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
+    margin: ;
 }
 .link-primary{
     background-color: var(--primary-color);
@@ -56,6 +58,7 @@ hr{
     color: black;    
     padding: 1rem;
     border-bottom-left-radius: 2rem ;
+
 }
 
 .navigation .nav-brand{
